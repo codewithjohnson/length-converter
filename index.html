@@ -10,22 +10,67 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3e6491bf19.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <main>
+        <!-- TITLE CONTAINER -->
         <div class="title_container">
             <h2>length converter</h2>
         </div>
+
+        <!-- AMOUNT CONTAINER -->
         <div class="amount_container">
-            <label for="amount">Enter Amount</label>
-            <input type="number" name="amount" id="amount">
+            <label for="amount">Enter Length</label>
+            <input type="number" name="amount" id="amount" value="0">
         </div>
 
+        <!-- UNITS TO BE CONVERTER CONTAINER -->
+        <div class="units_container">
 
+            <div class="left">
+                <p>From</p>
+                <div class="select_container from">
+                    <select name="from" id="from">
+                        <!-- <option value="select">Select</option> -->
+                        <option value="centimeter">Centimeter</option>
+                        <option value="meter">Meter</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="middle">
+                <i class="fas fa-cog fa-spin" style='font-size:24px'></i>
+                <!-- <i class='fas fa-exchange-alt' style='font-size:24px'></i> -->
+            </div>
+
+
+            <div class="right">
+                <p>To</p>
+                <div class="select_container to">
+                    <select name="from" id="to">
+                        <option value="meter">Meter</option>
+                        <option value="centimeter">Centimeter</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="formula_container">
+            <span class="formula_title">formular:</span><span class="formular_content">Divide the length by 100</span>
+        </div>
+
+        <div class="result_container">
+            <label for="result">Result</label>
+            <input type="text" name="result" id="result">
+        </div>
     </main>
 
-    <script src=""></script>
+    <script src="main.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

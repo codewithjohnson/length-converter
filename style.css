@@ -1,45 +1,124 @@
-*{
-    margin: 0;
-    border: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    height:100%;
+html {
+  height: 100%;
 }
 
-body{
-    min-height:100vh;
-    background-color:plum;
-    color: black;
+body {
+  min-height: 100vh;
+  background-color: plum;
+  color: black;
 
-    display:flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
 }
 
-main{
-    background-color:#ffd7a6;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items:center;
+main {
+  background-color: #ffd7a6;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 
 .title_container{
-    text-align: center;
-    margin-bottom:2rem;
+    text-transform: capitalize;
+}
+
+label{
+    font-weight:bold;
+}
+
+.title_container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.amount_container > input[type="number"] {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.5rem;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.units_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.units_container > .left,
+.middle,
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.select_container > select {
+  margin-top: 5px;
+  padding: 0.6rem;
+  cursor: pointer;
+  outline: none;
+}
+
+/* CENTER ALL ICON */
+i {
+  margin-top: 100%;
 }
 
 
-.amount_container > input[type="number"]{
+
+/* FORMULAR DISPLAY */
+.formula_container{
     width: 100%;
+    margin-top:1rem;
+}
+
+.formula_container > .formula_title{
+    font-size:0.6rem;
+    background-color:plum;
+    margin-right: 0.5rem;
+    font-weight:bold;
+    padding: 0.3rem;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.formula_container > .formular_content{
+    font-size:0.6rem;
+    font-weight:600;
+}
+
+
+/* RESULT CONTAINER */
+.result_container{
+    width:100%;
+    margin-top:1.5rem;
+}
+
+.result_container > input[type="text"]{
+    width:100%;
     padding: 0.6rem;
-    margin-top:0.5rem;
-    background-color:rgb(255, 255, 255)
+    margin-top: 0.5rem;
+    outline: none;
+}
+
+
+/* MAKE ALL LABEL TEXT BOLD */
+label{
+    font-weight:600;
 }
