@@ -4,6 +4,7 @@ const convertTo = document.querySelector('#to');
 const formulaContent = document.querySelector('.formular_content');
 const result = document.querySelector('#result');
 
+
 const hints = [
     {
         // 0
@@ -73,58 +74,72 @@ function convertValues() {
         (convertFrom.value === 'miles') && (convertTo.value === 'miles')
 
     ) {
+        result.style.border = '2px solid red';
         result.value = length.value;
         formulaContent.textContent = hints[0].sameUnit;
     } 
+    // CENTIMETER CONVERSION
     else if ((convertFrom.value === 'centimeter') && (convertTo.value === 'meter')) {
         result.value = length.value / 100;
         formulaContent.textContent = hints[1].c_m;
+        result.style.border = '3px solid green';
     } 
     else if ((convertFrom.value === 'centimeter') && (convertTo.value === 'feet')) {
         result.value = length.value * 0.032808;
         formulaContent.textContent = hints[2].c_f;
+        result.style.border = '3px solid green';
     }
     else if ((convertFrom.value === 'centimeter') && (convertTo.value === 'inches')) {
         result.value = length.value * 0.39370;
         formulaContent.textContent = hints[3].c_i;
+        result.style.border = '3px solid green';
     }
     else if ((convertFrom.value === 'centimeter') && (convertTo.value === 'yards')) {
         result.value = length.value * 0.010936;
         formulaContent.textContent = hints[4].c_y;
+        result.style.border = '3px solid green';
     }
     else if ((convertFrom.value === 'centimeter') && (convertTo.value === 'kilometers')) {
         result.value = length.value / 100000;
         formulaContent.textContent = hints[5].c_km;
+        result.style.border = '3px solid green';
     }
     else if ((convertFrom.value === 'centimeter') && (convertTo.value === 'miles')) {
         result.value = length.value * 0.0000062137;
         formulaContent.textContent = hints[6].c_mi;
+        result.style.border = '3px solid green';
     }
 
     // METER CONVERSION
     else if ((convertFrom.value === 'meter') && (convertTo.value === 'centimeter')) {
         result.value = length.value * 100;
         formulaContent.textContent = hints[7].m_c;
+        result.style.border = '3px solid green';
     }
     else if ((convertFrom.value === 'meter') && (convertTo.value === 'feet')) {
         result.value = length.value * 3.2808;
         formulaContent.textContent = hints[8].m_f;
+        result.style.border = '3px solid green';
     }
     else if ((convertFrom.value === 'meter') && (convertTo.value === 'yards')) {
         result.value = length.value * 1.0936;
         formulaContent.textContent = hints[9].m_y;
+        result.style.border = '3px solid green';
     }
     else if ((convertFrom.value === 'meter') && (convertTo.value === 'miles')) {
         result.value = length.value * 0.00062137;
         formulaContent.textContent = hints[10].m_mi;
+        result.style.border = '3px solid green';
     }
     else if ((convertFrom.value === 'meter') && (convertTo.value === 'inches')) {
         result.value = length.value * 39.370;
         formulaContent.textContent = hints[11].m_i;
+        result.style.border = '3px solid green';
     }
     else if ((convertFrom.value === 'meter') && (convertTo.value === 'kilometers')) {
         result.value = length.value / 1000;
         formulaContent.textContent = hints[12].m_km;
+        result.style.border = '3px solid green';
     }
 }
 
