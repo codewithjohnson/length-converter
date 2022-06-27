@@ -122,3 +122,9 @@ i {
 label{
     font-weight:600;
 }
+
+@media screen and (max-width:480px){
+  main{
+    width:95%;
+  }
+}
