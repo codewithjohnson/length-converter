@@ -126,5 +126,6 @@ label{
 @media screen and (max-width:480px){
   main{
     width:95%;
+    height:75vh;
   }
 }
