@@ -58,6 +58,14 @@ const hints = [{
         // 12 METER TO KILOMETER
         m_km: 'Divide the length by 1000'
     },
+    {
+        // 13 KILOMETER TO CENTIMETER
+        km_cm: 'Multiply the length by 100000'
+    },
+    {
+        // 14  KILOMETER TO METER
+        km_m: 'Multiply the length by 1000'
+    },
 ];
 
 
@@ -129,7 +137,16 @@ function convertValues() {
         result.value = length.value / 1000;
         formulaContent.textContent = hints[12].m_km;
         result.style.border = '3px solid green';
+    }else if ((convertFrom.value === 'kilometers') && (convertTo.value === 'centimeter')) {
+        result.value = length.value * 100000;
+        formulaContent.textContent = hints[13].km_cm;
+        result.style.border = '3px solid green';
+    }else if ((convertFrom.value === 'kilometers') && (convertTo.value === 'meter')) {
+        result.value = length.value * 1000;
+        formulaContent.textContent = hints[14].km_m;
+        result.style.border = '3px solid green';
     }
+    
 }
 
 

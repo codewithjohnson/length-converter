@@ -11,8 +11,7 @@ html {
 
 body {
   min-height: 100vh;
-  background-color: plum;
-  /* background-color: #5A2653 ; */
+  background:linear-gradient(90deg,#5a2653,plum);
   color: black;
 
   display: flex;
